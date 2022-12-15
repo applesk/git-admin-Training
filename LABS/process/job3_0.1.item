@@ -2,6 +2,8 @@
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -41,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vMAOvfDqXLx54qcl0ibOvRPdLCE5wfdfumHRzBeV"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:WgVFkcuQP0SyN4mAxgRbQ0jiQDC/U6yVjIWbQM0q"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -76,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rO06/pljTlKAq3C7rxjU/opS6PtR0fKWkIuwQ2wn"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5Qv8M8BPYy2lT3BwNhPVwI3O2qw7h0AAYGjYn3CA"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -106,13 +108,71 @@
     <routinesParameter id="_HmXhcHxzEe2kvKZWIJMJPg" name="TalendStringUtil"/>
     <routinesParameter id="_Hl61gHxzEe2kvKZWIJMJPg" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_31c8ab38-da26-4c40-9fdc-fc79e310c8c3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1cDMo5u0TZr9UiQ4MoD/X0auYMxjNedzfQpIw+EoCk4u5JDY1l5uEV6rgqlj9SDQ7OmfTUC5N9Y2&#13;
-gkgSs0ySuQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2e8c31a4-dfd7-42bd-925b-fe3ed0a230e8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FUHopYzNwm6b7umFx1VMe8cEIWkf1S7cJVDPAe5G35OrAkEOgGTInIEKLdjzbnm3eTHZLgVFnQXB&#13;
-eirGdH425w==</DigestValue></Reference></SignedInfo><SignatureValue>dl285DpaCumfZfeF8dEfF8kKTAZN3oXfSBhHU0ZqLhus5QlCUqOaU6PMLvvCkByLWCrIDDDtlMmt&#13;
-JxxG5QbYQbKyO5VN0+jw0ZR+zK7eLDUc+Xn5DYuV6eLjikKMO4Gi54KnVj58/5CcUg+63gx0SIxC&#13;
-Kt1L9078qwb/gYFu46a1LTRsJeO1E26ky8NCTobEYPQEegLXR1tyb7uKfA09pi+lp8kV2/Vd71uu&#13;
-0P0yEabEYY3+S8FGg+95CYtQaIDjntWOnzvTN/tjiAcQonXoU1hiAwXACyfkcv+/itqPzVUvhCqT&#13;
-UFB1LuC+DqGNNBKXntyeulm+g8B/cvWkO21+Bg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tBoxCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBoxCopy_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CLIENT_SECRET" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="REFRESH_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_PROXY" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8087"/>
+    <elementParameter field="CHECK" name="MOVE_DIRECTORY" value="false"/>
+    <elementParameter field="CHECK" name="COPY_DIRECTORY" value="false"/>
+    <elementParameter field="TEXT" name="FILE_NAME" value="&quot;All Files/name.temp&quot;"/>
+    <elementParameter field="TEXT" name="SOURCE_DIRECTORY" show="false" value="&quot;All Files/source&quot;"/>
+    <elementParameter field="TEXT" name="DESTINATION_DIRECTORY" value="&quot;All Files/destination&quot;"/>
+    <elementParameter field="CHECK" name="RENAME" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION_FILE_NAME" show="false" value="&quot;newname.temp&quot;"/>
+    <elementParameter field="TEXT" name="NEW_FOLDER_NAME" show="false" value="&quot;newFolderName&quot;"/>
+    <elementParameter field="CHECK" name="REMOVE_SOURCE_FILE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBoxCopy_1">
+      <column defaultValue="" key="false" length="0" name="destinationFilePath" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="destinationFileName" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="sourceDirectory" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="destinationDirectory" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBoxGet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBoxGet_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CLIENT_SECRET" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="REFRESH_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_PROXY" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8087"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;All Files/file.txt&quot;"/>
+    <elementParameter field="CHECK" name="STORE_TO_LOCAL" value="false"/>
+    <elementParameter field="FILE" name="OUTPUT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBoxGet_1">
+      <column defaultValue="" key="false" length="0" name="fileName" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBoxCopy_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBoxGet_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5aee4148-84d6-45fd-bee2-e7dd3d2d45a9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vHkeQAgWs2m+24Nd4S83h/CLZEAFFCSyOH/clAJw4gFTQKXBTjTyJFnZtTL2bUDP2mstSJFIHexu&#13;
+hnzVEi/mDw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8b8dd8db-6ba3-433f-b6ae-991806ef054f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Quc74NR3lbfKdfYoIs9H1LJNFYxRC9AHXFX4KXzRj1ZIm+GQWheJz/reDVAwhKhmrCRWOONN0ZM3&#13;
+VFHWqSt+Bg==</DigestValue></Reference></SignedInfo><SignatureValue>md3i2WEdyF9MXSF4GOFbTyNmxkRPhzwplsRdb0jHmuNIesVbHC+G64hvMzo3pRSfPjUDtQ0aBOX5&#13;
+07ce6q3NyQUB2f49jtf0h7CGmEHDmDT8BAeuHNBTW+aPhQkEL12Ki0/Uk7pWMWDcW6o2MiLhQt3q&#13;
+oydWvR5rV2kGcfOJqtzRHfBM1FmUzlufWLYnB+b3EuyjFTMehZlWG8+tCdZpHiOkbgc6TTwytDAd&#13;
+n815rm68W4UBQNydcUss6ZaohPDvKHIK5QSowt45NL66q26MWiXJWcM3B14BQBwof0vFHVN4fCAP&#13;
+XTLzAOtE+zIGvB4d1+4siHruSbMxRMk2wNbsQg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +194,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2e8c31a4-dfd7-42bd-925b-fe3ed0a230e8" Target="#_31c8ab38-da26-4c40-9fdc-fc79e310c8c3"><Timestamp>2022-12-15 12:36:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8b8dd8db-6ba3-433f-b6ae-991806ef054f" Target="#_5aee4148-84d6-45fd-bee2-e7dd3d2d45a9"><Timestamp>2022-12-15 12:36:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
